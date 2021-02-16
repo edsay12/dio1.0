@@ -1,0 +1,184 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+body{
+
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.instagram-wraper{
+    display: flex;
+    /* eixo Y */
+    align-items: center;
+    /* eixo x  começa da esqueda para a direita */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagram-phone img {
+
+width: 700px;
+}
+
+.instagram_logo{
+    width: 100px;
+    height:3rem;
+}
+
+.profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+/* faz com que a imagem nao exceda o tamanhanho da div  */
+    overflow:hidden;
+    border-radius:50%
+
+}
+.profile img{
+height:6rem;
+
+}
+
+.instagram_continue{
+display:flex;
+align-items:center;
+justify-content:space-around;
+flex-direction:column;
+width:50%;
+
+}
+
+.gruppo{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:column;
+background-color:white;
+width:100%;
+padding:1.3rem 0 ;
+border:1px solid black;
+margin-top:10px
+}
+
+.gruppo:nth-child(1){
+
+min-height:19rem
+
+}
+
+.instagram-login{
+
+
+background-color:#067aff;
+color:black;
+padding:8px;
+border-radius:12px;
+
+}
+.instagram-logout{
+
+color:#067aff;
+margin-top:1rem
+
+}
+
+.not-acount{
+
+    color:rgb(160, 160,160)
+
+}
+
+.text-blue{
+    color:#067aff;
+}
+
+.get-the-app{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+padding: 1.3rem 0 ;
+
+
+
+
+}
+
+.dowload{
+
+
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+
+.app-dowload{
+
+
+    height: 5rem;
+    width: 16rem;
+    background-size: cover;
+
+}
+.app-dowload:nth-child(1){
+background-image:url(insta/applestore.png);
+
+}
+.app-dowload:nth-child(2){
+background-image:url(insta/playstore.png);
+
+}
+
+
+@media(max-width:1024px){
+.instagram-wraper{
+
+width: 90%;
+
+}
+
+
+
+}
+@media(max-width:650px){
+.instagram-wraper{
+
+width: 90%;
+
+}
+.instagram-phone{
+
+    display: none;
+}
+
+.instagram_continue{
+
+
+width: 100%;
+}
+
+
+
+}
